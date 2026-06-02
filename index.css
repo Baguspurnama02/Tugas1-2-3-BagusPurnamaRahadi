@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: black;
+    color: white;
+}
+
+nav{
+    position: relative;
+    padding: 20px 50px;
+}
+
+nav h1{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin-left: 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:100px;
+    min-height:80vh;
+    padding:50px;
+}
+
+.text{
+    max-width:500px;
+}
+
+.text h2{
+    font-size: 40px;
+}
+
+.text h1{
+    font-size: 60px;
+    margin: 10px 0;
+}
+
+.text h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.text p{
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+button{
+    padding: 10px 20px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.foto img{
+    width:300px;
+    height:300px;
+    border-radius:20px;
+    object-fit:cover;
+}
+
+.buttons{
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.buttons a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.buttons a:hover{
+    background: white;
+    color: black;
+}
+
+#about{
+    color: white;
+    padding: 100px 150px;
+}
+
+#about h1{
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+#about p{
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    min-height: 80vh;
+    padding: 50px;
+    color: white;
+}
+
+.project-image img{
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.project-text{
+    max-width: 600px;
+}
+
+.project-text h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.project-text p{
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.gallery-section{
+    padding: 50px;
+    color: white;
+}
+
+.gallery-section h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.gallery img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.gallery img:hover{
+    transform: scale(1.03);
+}
